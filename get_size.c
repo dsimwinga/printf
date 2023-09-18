@@ -7,7 +7,7 @@
 *Return: Precision.
 */
 
-int get_size(const char *format, int *i)
+int get_size(const char *format, int *t)
 {
 	int curr_i = *t + 1;
 	int size = 0;

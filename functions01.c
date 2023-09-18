@@ -43,7 +43,7 @@ int print_unsigned(va_list types, char buffer[],
 
 	t++;
 
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+	return (write_unsgnd(0, t, buffer, flags, width, precision, size));
 }
 
 /**
@@ -98,7 +98,7 @@ int print_octal(va_list types, char buffer[],
 
 	t++;
 
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+	return (write_unsgnd(0, t, buffer, flags, width, precision, size));
 }
 
 /**
@@ -199,5 +199,5 @@ int print_hexa(va_list types, char map_to[], char buffer[],
 
 	t++;
 
-	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
+	return (write_unsgnd(0, t, buffer, flags, width, precision, size));
 }

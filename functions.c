@@ -192,7 +192,7 @@ int print_int(va_list types, char buffer[],
 
 	t++;
 
-	return (write_number(is_negative, i, buffer, flags, width, precision, size));
+	return (write_number(is_negative, t, buffer, flags, width, precision, size));
 
 }
 
@@ -240,11 +240,11 @@ int print_binary(va_list types, char buffer[],
 	{
 		m /= 2;
 
-		a[i] = (n / m) % 2;
+		a[t] = (n / m) % 2;
 
 	}
 
-	for (t = 0, sum = 0, count = 0; t < 32; it++)
+	for (t = 0, sum = 0, count = 0; t < 32; t++)
 
 	{
 

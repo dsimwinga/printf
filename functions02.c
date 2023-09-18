@@ -242,7 +242,7 @@ int print_rot13string(va_list types, char buffer[],
 
 		{
 
-			if (in[j] == str[i])
+			if (in[j] == str[t])
 
 			{
 				x = out[j];

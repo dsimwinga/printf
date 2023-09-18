@@ -7,7 +7,7 @@
 *Return: Flags:
 */
 
-int get_flags(const char *format, int *i)
+int get_flags(const char *format, int *t)
 
 {
 
